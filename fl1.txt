@@ -23,4 +23,4 @@ git merger --no-ff -m "说明" 分支名：合并分支
 ---feature分支--增加功能，建议新建功能分支（开发完成后commit 、merge 、branch -d 删除分支即可）
 如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除。
 
---=============
+---远程推送指定分支（git push origin dev）
