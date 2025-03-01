@@ -1,7 +1,26 @@
 git is a distribute version control software
 git is a free software append GPL
 
+
 添加了一行git status、git diff，区别
 
-creating  a new branch is quick AND simple. add merge
 
+creating  a new branch is quick AND simple. add merge
+---创建分支
+git switch -c 分支名：创建并指向当前分支
+git switch master：切换master分支
+git  branch : 查看当前分支
+git branch -d 分支名：删除分支（必须提交commit和merge分支后才能删除）
+git merger --no-ff -m "说明" 分支名：合并分支
+
+
+
+---bug 分支---（stash 隐藏分支<不想提交>；stash pop 恢复分支；check-pick ID）
+临时在master上加一个Bug修复分支，修复完成恢复现场并复制修改
+测试stash（在dev分支上的活还没干完，需要在master主分支上创建一个临时分支修复bug）将dev 分支上（还没完成不能提交）的工作stash隐藏起来——修改完成后，再次回到dev分支stash pop恢复现场（bug还存在dev分支，check-pick <bug 的commit ID>，将更改内容复制到当前分支）
+
+
+---feature分支--增加功能，建议新建功能分支（开发完成后commit 、merge 、branch -d 删除分支即可）
+如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除。
+
+--=============
