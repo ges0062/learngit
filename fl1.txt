@@ -3,5 +3,5 @@ git is a free software append GPL
 
 添加了一行git status、git diff
 
-creating  a new branch is quick AND simple.
+creating  a new branch is quick AND simple. add merge
 
